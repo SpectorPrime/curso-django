@@ -1,0 +1,46 @@
+// Para criar app django inicial //
+
+	django-admin startproject app .
+
+**********************************************************************************************
+// Iniciar servidor Django //
+	
+	python manage.py runserver
+	
+**********************************************************************************************
+// Verificar config de banco de dados //
+
+	python manage.py migrate
+	
+**********************************************************************************************
+// Criar usuario para administrar //
+
+	python manage.py createsuperuser
+
+**********************************************************************************************
+// Criar um sub app //
+
+	python manage.py startapp core
+
+**********************************************************************************************
+
+Quando você cria uma aplicação, você deve registrar no settings do app
+
+em installed_apps []
+
+**********************************************************************************************
+
+Models no Django é basicamente a forma que você cria dados no banco de dados
+
+**********************************************************************************************
+// Para executar comandos nop html //
+
+Chaves persistentes {% %} é  para comandos 
+Duas chaves {{ }} é para variável
+
+**********************************************************************************************
+
+
+
+
+

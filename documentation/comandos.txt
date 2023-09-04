@@ -40,6 +40,9 @@ Duas chaves {{ }} é para variável
 
 **********************************************************************************************
 
+{% extends 'diretório' %}
+
+{% block content %} {% endeblock content%}
 
 
 

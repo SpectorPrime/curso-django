@@ -1,0 +1,33 @@
+Esse é uma aplicação web de um site de receitas, com sistema de login e postagem de 
+receitas pelo usuário, mediante a aprovação de um admin.
+
+O projeto raiz está localizado na pasta "projeto", onde se encontra o settings de todo o sistema
+E onde se tem o arquivo de urls principal do site.
+
+Em seguida criei um app chamado "recipes", com duas urls até o momento:
+home/
+recipes/<int:id> aqui cada receita receberá um id coletado pela view "recipes(request, id)"
+
+Criei uma pasta "partials" dentro de templates para colocar os htmls parciais
+e "pages" para o html das páginas principais, usando o {% include %} para 
+receber os partials
+
+O CSS referente ao html se encontra dentro de static
+Tive que colocar em settings usando os comandos:
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'base_static',
+] -> Uma lista declarando todos diretórios estáticos
+
+STATIC_ROOT = BASE_DIR / 'static' -> Normalmente os arquivos estáticos ficam
+dentro de cada um dos apps, entretanto é uma prática recomendada reunir todos os
+arquivos estáticos em um único local. O STATIC_ROOT declara onde serão armazenadas.
+
+Em seguida executei no terminal o comando: python manage.py collectstatic
+Esse comando coleta todos os estáticos do projeto e os reúne no local declarado pelo 
+STATIC_ROOT.
+
+Para tornar a estrutura do projeto mais organizada eu criei espaços de nomes
+exemplo: o app chamado receitas, assim que criei a pasta "templates", dentro dela criei
+outra pasta chamada "recipes" também, assim evito colisões de nomes quando eu tiver diversas 
+aplicações, ou seja, essa pasta templates se refere ao app "recipes".

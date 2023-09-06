@@ -14,5 +14,7 @@ def home(request):
 # Essa view coleta o id de cada receita e retorna a página html
 # que destaca a receita
 def recipes(request, id):
-    return render(request, 'recipes/pages/recipe-view.html',
-                  context={'recipe': make_recipe()})
+    return render(request, 'recipes/pages/recipe-view.html', context={
+        'recipe': make_recipe(),
+        'is_detail_page': True
+        })

@@ -31,3 +31,6 @@ Para tornar a estrutura do projeto mais organizada eu criei espaços de nomes
 exemplo: o app chamado receitas, assim que criei a pasta "templates", dentro dela criei
 outra pasta chamada "recipes" também, assim evito colisões de nomes quando eu tiver diversas 
 aplicações, ou seja, essa pasta templates se refere ao app "recipes".
+
+Um model basicamente representa uma tabela no banco de dados
+Os models são criados através das classes, ou seja, POO (Programação Orientada a Objetos)

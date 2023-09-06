@@ -1,6 +1,11 @@
 <!-- Esse será o template base, onde foi criado o block content para o conteúdo principal do site -->
+<!DOCTYPE html>
+<html lang="pt-br">
 
-{% include 'recipes/partials/head.html' %}
+<head>
+    {% include 'recipes/partials/head.html' %}
+    <title>{% block title %}{% endblock title %} Receitas</title>
+</head>
 
 <body>
     {% include 'recipes/partials/header.html' %}

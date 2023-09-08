@@ -5,6 +5,9 @@ from django.contrib.auth.models import User
 class Category(models.Model):
     name = models.CharField(max_length=70)
 
+    def __str__(self) -> str:
+        return self.name
+
 
 class Recipe(models.Model):
     title = models.CharField(max_length=70)
@@ -26,6 +29,9 @@ class Recipe(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.SET_NULL, null=True
         )
+
+    def __str__(self) -> str:
+        return self.title
 
 # EDITED
 # title description slug

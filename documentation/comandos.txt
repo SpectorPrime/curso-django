@@ -44,6 +44,11 @@ Duas chaves {{ }} é para variável
 
 {% block content %} {% endeblock content%}
 
+**********************************************************************************************
+Criação da pasta media no settings do projeto, para guardar os arquivos que os usuario fazem
+upload no site.
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 

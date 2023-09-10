@@ -1,0 +1,14 @@
+<!-- Aqui foi usado o extends do template base para o template 'filho', em seguida
+envelopei a div do conteúdo principal com o block -->
+
+{% extends 'global/base.html' %}
+
+{% block title %}Categoria |{% endblock title %}
+
+{% block content %}
+<div class="main-content main-content-list container">
+    {% for recipe in recipes  %}
+        {% include 'recipes/partials/recipe.html' %}
+    {% endfor %}
+</div>
+{% endblock content %}

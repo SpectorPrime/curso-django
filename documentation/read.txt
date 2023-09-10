@@ -34,3 +34,8 @@ aplicações, ou seja, essa pasta templates se refere ao app "recipes".
 
 Um model basicamente representa uma tabela no banco de dados
 Os models são criados através das classes, ou seja, POO (Programação Orientada a Objetos)
+
+Para filtrar as receitas com base no category_id nas views, você precisa navegar pela relação usando o duplo sublinhado __, da seguinte forma:
+
+category__id: Isso significa que você está acessando o campo id do modelo relacionado Category através do campo category no modelo Recipe.
+Essa é a sintaxe padrão do Django para navegar por relacionamentos em consultas, permitindo que você filtre e acesse dados em modelos relacionados de maneira eficaz. É uma das características poderosas do ORM (Object-Relational Mapping) do Django, que simplifica o acesso a dados em bancos de dados relacionais por meio de objetos Python.
